@@ -1,0 +1,254 @@
+body {
+    background-color: ;
+}
+.header_top {
+    background-color: #ffffff;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000000;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.item {
+    display: flex;
+}
+.pl {
+    margin-left: 40px;
+}
+.circle {
+    border: solid 1px #eee;
+    border-radius: 50%;
+    /* padding: 10px; */
+}
+/*ヘッダー終了*/
+/* <!--最初のまとまり--> */
+/*  */
+.margin__k {
+    margin-top: 90px;
+}
+.v_hero {
+    display: flex;
+}
+.p_hero {
+    position: relative;
+    width: 70%;
+    float: right;
+    margin-left: -100px;
+    z-index: 5;
+}
+.f_hero {
+    width: 100%;
+    border-radius: 10% 0 0 10%;
+    /* transform: translateY(-40%); */
+}
+
+.mk_hero {
+    position: relative;
+    background-color: #eff2f5;
+    border-radius: 10%;
+    width: 600px;
+    height: 330px;
+    transform: translateY(50%);
+    /* float: left; */
+    z-index: 9;
+    display: grid;
+    place-items: center;
+}
+.hero__text_1 {
+    color: #0071bc;
+    font-weight: bold;
+    transform: translateY(200%);
+}
+.hero__scroll {
+    position: absolute;
+    bottom: -90px;
+    left: 24px;
+}
+h1 {
+    font-size: 400%;
+}
+
+/* <!--最初のまとまり終了--> */
+/* <!--POSSEとは--> */
+.about__posse {
+    text-align: center;
+}
+.about__posse_1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.about__posse_2 {
+    color: #0071bc;
+}
+    /*ここから画像とテキスト*/
+.about__yoko {
+    display: flex;
+}
+.about__img {
+    max-width: 100%;
+}
+.interview__columm__set {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+}
+.interview__columm__list1 {
+    color: black;
+    width: 500px;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10% 10% 0 0;
+}
+.interview__columm__list1 > img {
+    border-radius: 10%;
+}
+/*ここから画像とテキスト終了*/
+/* <!--POSSEとは-終了-> */
+/* <!--ラインセクション--> */
+.line__section {
+    background-image: url(../img/bg-line.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 100px;
+    margin: 100px;
+    margin-top: 60%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#line_section_top {
+    /* display: flex; */
+}
+
+.line__section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 113, 188, 0.9);
+    border-radius: 50px;
+    width: 100%;
+    z-index: 100;
+}
+p {
+    position: relative;
+    z-index: 10000;
+    font-weight:300;
+}
+.line_section_top__icon {
+    width: 50px;
+}
+.line_section_top {
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+}
+.line_section_top > p {
+    font-size: 50px;
+    color: #eee;
+}
+.section__text {
+    line-height: 40px;
+}
+.line_add {
+    position: relative;
+    z-index: 1000;
+}
+.kh {
+    z-index: 9999;
+    position: relative;
+    transform: translateX(-50px);
+    vertical-align: -3px;
+}
+/* <!--ラインセクション終了--> */
+
+/* <!--フッター> */
+.line {
+    size: 20px;
+}
+.line_add {
+    /* background-color:#ffffff;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    tab-size: 0em; */
+    background-color: #fff;
+    border-radius: 50px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    max-width: 320px;
+    padding: 12px;
+    position: relative;
+    width: 100%
+}
+.line__top {
+    background-color:#5FDF5B;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 22px 22px 22px 22px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 999999999;
+}
+
+.line {
+    position: relative;
+    z-index: 100;
+    margin-left: 230;
+}
+
+/* <!--フッター--> */
+
+.p_footer {
+    border-top: solid 1px #eee;
+    margin: 0 0 48px 0;
+    padding-top: 56px;
+    text-align: center;
+}
+.none {
+    text-decoration: none;
+    color: #333;
+}
+.i_footer_icon {
+    display: inline-flex;
+    /* padding-top: 32px; */
+    padding: 10px;
+    /* margin:8px; */
+    border: solid 1px #eee;
+    border-radius: 50%;
+    /* height: 50px; */
+    /* font-size: 24px; */
+    text-align: center;
+    /* width: 50px; */
+    
+}
+
+.copyright {
+    border-top: solid 1px #eee;
+    padding-top: 36px;
+    text-align: center;
+    font-size: 80%;
+}
+.copyright::after {
+    content: "";
+}
