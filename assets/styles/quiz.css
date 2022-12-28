@@ -1,0 +1,110 @@
+/*文字に適応*/
+h1{
+    color: white;
+}
+.top__img__margin > p {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 204px;
+    font-size: 25px;
+    font-weight: bold;
+}
+h1 {
+    position: absolute;
+    top: 250px;
+    left: 204px;
+}
+/*文字に適応END*/
+
+.quiz__pad {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*画像に適応されるスタイル*/
+    /*top_img*/
+.top__img__margin{
+    margin-top: 90px;
+    background-image:url(../img/quiz/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+}
+    
+    /*top_img_____END*/
+.quiz__img__frame{
+    text-align: center;
+}
+.quiz__images{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+/*画像に適応されるスタイル    END*/
+
+/*クイズセクション*/
+.quiz__section {
+    margin-top: 120px;
+}
+.quiz__Qx{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    background-color:#0071bc;
+    width: 90px;
+    border-radius: 8px;
+    padding: 8px 10px;    
+}
+.quiz__text{
+    font-size: 40px;
+    line-height: 50px;
+    margin: 50px 0 50px 0;
+}
+.quiz__answer_A {
+    background-color:  #e34e70;
+    color: white;
+    font-size: 50px;
+    border-radius: 8px;
+    width: 60px;
+    padding: 8px 10px;
+}
+
+.quiz__answer__text{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+.quiz__answer__text > div {
+    border: solid 4px #eee; 
+    padding: 24px;
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .4s;
+}
+.quiz__answer__text > div:hover {
+    color: rgb(3, 213, 255);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.quiz__quote{
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 27px 10px 27px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 15px;
+}
+.quiz__answer__text > div > div > img{
+    vertical-align: 1.6px;
+} 
+.cap__p{
+    vertical-align: 0.1px;
+}
+/*クイズセクションEND*/

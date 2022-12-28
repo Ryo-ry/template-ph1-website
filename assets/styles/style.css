@@ -33,6 +33,7 @@ body {
 }
 .v_hero {
     display: flex;
+    padding-bottom: 100px;
 }
 .p_hero {
     position: relative;
@@ -59,6 +60,10 @@ body {
     display: grid;
     place-items: center;
 }
+h1 {
+    font-weight: bold;
+    font-size: 400%;
+}
 .hero__text_1 {
     color: #0071bc;
     font-weight: bold;
@@ -66,12 +71,10 @@ body {
 }
 .hero__scroll {
     position: absolute;
-    bottom: -90px;
-    left: 24px;
+    bottom: -80px;
+    left: 30px;
 }
-h1 {
-    font-size: 400%;
-}
+
 
 /* <!--最初のまとまり終了--> */
 /* <!--POSSEとは--> */
@@ -81,6 +84,7 @@ h1 {
 .about__posse_1 {
     font-weight: bold;
     font-size: 30px;
+    margin-bottom: 30px;
 }
 .about__posse_2 {
     color: #0071bc;
@@ -95,18 +99,25 @@ h1 {
 .interview__columm__set {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
 }
 .interview__columm__list1 {
     color: black;
     width: 500px;
     padding: 30px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10% 10% 0 0;
+    text-align: center;
+
 }
 .interview__columm__list1 > img {
     border-radius: 10%;
+}
+.interview__columm__list1 > p {
+    text-align: left;
+    padding-top: 50px;
+    line-height: -10px;
 }
 /*ここから画像とテキスト終了*/
 /* <!--POSSEとは-終了-> */
@@ -120,7 +131,7 @@ h1 {
     color: aliceblue;
     padding: 100px;
     margin: 100px;
-    margin-top: 60%;
+    /* margin-top: 60%; */
     border-radius: 50px;
     text-align: center;
 }
@@ -128,7 +139,6 @@ h1 {
 #line_section_top {
     /* display: flex; */
 }
-
 .line__section::before{
     content: '';
     position: absolute;
@@ -146,8 +156,9 @@ p {
     z-index: 10000;
     font-weight:300;
 }
+
 .line_section_top__icon {
-    width: 50px;
+    width: 50px; 
 }
 .line_section_top {
     position: relative;
@@ -158,6 +169,7 @@ p {
 .line_section_top > p {
     font-size: 50px;
     color: #eee;
+    
 }
 .section__text {
     line-height: 40px;
@@ -195,13 +207,14 @@ p {
     max-width: 320px;
     padding: 12px;
     position: relative;
-    width: 100%
+    width: 100%;
 }
 .line__top {
     background-color:#5FDF5B;
-    border-radius: 10px;
+    border-radius: 30px;
     color: aliceblue;
-    padding: 22px 22px 22px 22px;
+    padding: 30px 40px 30px 40px;
+    gap: 19px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -225,9 +238,15 @@ p {
     padding-top: 56px;
     text-align: center;
 }
+.p_footer > div {
+    padding-bottom: 10px;
+}
 .none {
     text-decoration: none;
     color: #333;
+}
+.l_inner > img {
+    margin: 20px;
 }
 .i_footer_icon {
     display: inline-flex;
@@ -245,9 +264,11 @@ p {
 
 .copyright {
     border-top: solid 1px #eee;
-    padding-top: 36px;
+    padding-top: 20px;
     text-align: center;
     font-size: 80%;
+    margin-bottom: 20px;
+    
 }
 .copyright::after {
     content: "";
