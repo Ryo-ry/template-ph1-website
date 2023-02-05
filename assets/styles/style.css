@@ -159,6 +159,8 @@ p {
 
 .line_section_top__icon {
     width: 50px; 
+    background-color: #eee;
+    height: 48px;  
 }
 .line_section_top {
     position: relative;

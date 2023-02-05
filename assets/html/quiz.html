@@ -51,8 +51,8 @@
 <!--クイズ１-->
 <!--↓↓↓↓パディング調整[左右の余白]↓↓↓↓↓-->
 <section class="quiz__pad">
-        <!--↑↑↑↑↑↑↑↑-->
-<section class="quiz__section">
+        <!--余白調整↑↑↑↑↑↑↑↑-->
+<section class="quiz__section js-quiz" data-quiz="0">
     <div>
         <div class="quiz__Qx">
             <p>Q1</p>
@@ -64,26 +64,34 @@
     <div class="quiz__img__frame">
         <img src="../img/quiz/img-quiz01.png" alt="ヒトの割合の画像" class="quiz__images">
     </div>
-    <div>
+    <div >
         <div class="quiz__answer_A">
             <p>A</p>
         </div>
         <div class="quiz__answer__text">
-            <div>
-                <div>約28万人</div>
+            <button type="button" class="js-answer" data-answer="0">
+                <div class="Q__answer" >約28万人</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
-                <div>約79万人</div>
+            </button>
+            <button type="button" class="Q__answer js-answer" data-answer="1">
+                <div >約79万人</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="Q__answer js-answer" data-answer="2">
                 <div>約183万人</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
+            </button>
         </div>
     </div>
-    <div class="quiz__quote">
+    <!--正解or不正解-->
+    <div class="p__Q js-answerBox">
+        <!-- <p>不正解...</p> -->
+        <p class="js-answerTitle"></p>
+        <p class="js-answerText">A　約79万人</p>
+    </div>
+    <!--正解or不正解　END-->
+    <div class="quiz__quote js-answerBox">
+            <!--上記のjs-answerBox必要？-->
         <div>
             <img src="../img/icon/icon-note.svg" alt="帽子アイコン" class="cap__p">
         </div>
@@ -93,8 +101,12 @@
     </div>    
 </section>
 <!--クイズ１END-->
+
+
+
+
 <!--クイズ2-->
-<section class="quiz__section">
+<section class="quiz__section js-quiz" data-quiz="1">
     <div>
         <div class="quiz__Qx">
             <p>Q2</p>
@@ -113,23 +125,35 @@
         <p>A</p>
     </div>
     <div class="quiz__answer__text">
-        <div>
+        <button type="button" class="js-answer" data-answer="0">
             <div>INTECH</div>
             <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-        </div>
-        <div>
+        </button>
+        <button type="button" class="js-answer" data-answer="1">
             <div>BIZZTECH</div>
             <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-        </div>
-        <div>
+        </button>
+        <button type="button" class="js-answer" data-answer="2">
             <div>X-TECH</div>
             <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-        </div>
+        </button>
     </div>   
+    <div class="p__Q js-answerBox">
+        <!--POSSEはここでanswerTitleをつけて、正解か不正解にしている。-->
+        <!--自分はvisibleを用いているはず-->
+        <p class="js-answerTitle"></p>
+        <p class="answerText__change">
+            <span class="Text_A">A</span>
+            <span class="js-answerText"></span>
+        </p>
+    </div>
 </section>
 <!--クイズ2END-->
+
+
+
 <!--クイズ3-->
-<section class="quiz__section">
+<section class="quiz__section js-quiz" data-quiz="2">
     <div>
         <div class="quiz__Qx">
             <p>Q3</p>
@@ -146,24 +170,33 @@
             <p>A</p>
         </div>
         <div class="quiz__answer__text">
-            <div>
+            <button type="button" class="js-answer" data-answer="0">
                 <div>Internet of Things</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="1">
                 <div>INtegrate into Technology</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="2">
                 <div>Information on Tool</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
+            </button>
         </div>
+    </div>
+    <div class="p__Q js-answerBox">
+        <p class="js-answerTitle"></p>
+        <p class="answerText__change">
+            <span class="Text_A">A</span>
+            <span class="js-answerText"></span>
+        </p>
     </div>
 </section>
 <!--クイズ3END-->
+
+
 <!--クイズ4-->
-<section class="quiz__section">
+<section class="quiz__section js-quiz" data-quiz="3">
     <div>
         <div class="quiz__Qx">
             <p>Q4</p>
@@ -184,19 +217,26 @@
             <p>A</p>
         </div>
         <div class="quiz__answer__text">
-            <div>
+            <button type="button" class="js-answer" data-answer="0">
                 <div>Society 5.0</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="1">
                 <div>CyPhy</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="2">
                 <div>SDGs</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
+            </button>
         </div>
+    </div>
+    <div class="p__Q js-answerBox">
+        <p class="js-answerTitle"></p>
+        <p class="answerText__change">
+            <span class="Text_A">A</span>
+            <span class="js-answerText"></span>
+        </p>
     </div>
     <div class="quiz__quote">
         <div>
@@ -209,7 +249,7 @@
 </section>
 <!--クイズ4END-->
 <!--クイズ5-->
-<section class="quiz__section">
+<section class="quiz__section js-quiz" data-quiz="4">
     <div>
         <div class="quiz__Qx">
             <p>Q5</p>
@@ -229,25 +269,32 @@
             <p>A</p>
         </div>
         <div class="quiz__answer__text">
-            <div>
-                <div>Web 3.0</div>
+            <button type="button" class="js-answer" data-answer="0">
+                <div>Web3.0</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="1">
                 <div>NFT</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
-                <div>約183万人</div>
+            </button>
+            <button type="button" class="js-answer" data-answer="2">
+                <div>メタバース</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
+            </button>
         </div>
+    </div>
+    <div class="p__Q js-answerBox">
+        <p class="js-answerTitle"></p>
+        <p class="answerText__change">
+            <span class="Text_A">A</span>
+            <span class="js-answerText"></span>
+        </p>
     </div>    
 </section>
 
 <!--クイズ5END-->
 <!--クイズ6-->
-<section class="quiz__section">
+<section class="quiz__section js-quiz" data-quiz="5">
     <div>
         <div class="quiz__Qx">
             <p>Q6</p>
@@ -267,19 +314,26 @@
             <p>A</p>
         </div>
         <div class="quiz__answer__text">
-            <div>
+            <button type="button" class="js-answer" data-answer="0">
                 <div>約2倍</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="1">
                 <div>約5倍</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
-            <div>
+            </button>
+            <button type="button" class="js-answer" data-answer="2">
                 <div>約11倍</div>
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
-            </div>
+            </button>
         </div>
+    </div>
+    <div class="p__Q js-answerBox">
+        <p class="js-answerTitle"></p>
+        <p class="answerText__change">
+            <span class="Text_A">A</span>
+            <span class="js-answerText"></span>
+        </p>
     </div>
     <div class="quiz__quote">
         <div>
@@ -361,6 +415,8 @@
     <div class="copyright">&copy;2022 posse</div>
 </footer>
 <!--フッターここまで-->
+<!-- <script src="../js/quiz.js"></script> -->
+<script src="../js/quiz-again.js"></script>
 </body>
 </html>
 

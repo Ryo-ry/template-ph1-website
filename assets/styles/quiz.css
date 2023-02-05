@@ -15,11 +15,30 @@ h1 {
     top: 250px;
     left: 204px;
 }
+.js-answerTitle {
+    color: #0071bc;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.changeColor {
+    color: #e34e70;
+}
+.Text_A {
+    font-weight: bold;
+    font-size: 23px;
+}
+.js-answerText {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+
 /*文字に適応END*/
 
 .quiz__pad {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 /*画像に適応されるスタイル*/
@@ -78,7 +97,7 @@ h1 {
     gap: 10px;
     margin: 20px 0 20px 0;
 }
-.quiz__answer__text > div {
+.quiz__answer__text > button {
     border: solid 4px #eee; 
     padding: 24px;
     width: 32%;
@@ -86,12 +105,31 @@ h1 {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
-    transition: .4s;
+    /* transition: .4s; */
+    border-radius: 9px;
 }
-.quiz__answer__text > div:hover {
+.quiz__answer__text > button:hover {
     color: rgb(3, 213, 255);
     transform: scale(1.1);
     cursor: pointer;
+}
+.p__Q {
+    display: none;
+    background-color: #eff2f5;
+    padding: 30px 40px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.visible {
+    display: block;
+}
+.visible__Correct {
+    display: block;
+    background-color: #fff2f5;
+}
+.answer__another {
+    background-color: #0071bc;
 }
 .quiz__quote{
     display: flex;
@@ -100,8 +138,9 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     gap: 15px;
+    border-radius: 10px;
 }
-.quiz__answer__text > div > div > img{
+.quiz__answer__text > button > div > img{
     vertical-align: 1.6px;
 } 
 .cap__p{
