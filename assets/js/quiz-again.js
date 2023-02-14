@@ -45,12 +45,12 @@ allQuiz.forEach(quiz =>{
     const answers = quiz.querySelectorAll('.js-answer');
     const selectedQuiz = Number(quiz.getAttribute('data-quiz'));
     const answerBox = quiz.querySelector('.js-answerBox');
-    //js-answerBoxは未対応の箇所あり（№１のみ対応）
+    //js-answerBoxは未対応の箇所あり（№１のみ対応）→おそらく対応済み
     const answerTitle = quiz.querySelector('.js-answerTitle');
     //↓読み取られていない↓
     
     
-    //ここら辺は未対応の箇所多し
+    //ここら辺は未対応の箇所多し→おそらく対応済み
 
 
 
@@ -89,20 +89,27 @@ allQuiz.forEach(quiz =>{
         console.log(CORRECT_ANSWERS[selectedQuiz].index)
     })
     })
-})
+})};
+
+//意味なし
+// const jojo = document.getElementById('jojo');
+// const jotaro = document.getElementById('jotaro');
+// const dhio = jotaro.cloneNode(jojo)
+// console.log(dhio)
+// jojo.appendChild(dhio)
+// }
 
 
-
-
-
-
-
-
-}
-
-
-
-
-//行けるかもと思っているやり方。
-//クイズをまずすべて取得、やり方のだいたいは一緒で
-//クラス名にvisibleをつけるだけ、
+//以下、自分の過去の試作
+// (()=>{
+//     const quizText =[
+//         '日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？',
+//         '既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？'
+//     ];
+//     console.log(quizText)
+//     const quizAnswer = [
+//         ['28','79','183'],
+//         ['INTECH','BIZZTECH','X-TECH']
+//     ]
+//     console.log(quizAnswer);
+// })()

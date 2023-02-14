@@ -50,9 +50,9 @@
 <!--クイズセクション-->
 <!--クイズ１-->
 <!--↓↓↓↓パディング調整[左右の余白]↓↓↓↓↓-->
-<section class="quiz__pad">
+<section class="quiz__pad" >
         <!--余白調整↑↑↑↑↑↑↑↑-->
-<section class="quiz__section js-quiz" data-quiz="0">
+<section class="quiz__section js-quiz" data-quiz="0" id="jotaro">
     <div>
         <div class="quiz__Qx">
             <p>Q1</p>
@@ -60,10 +60,11 @@
         <div class="quiz__text">
             <p>日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</p>
         </div>
+        <div class="quiz__img__frame">
+            <img src="../img/quiz/img-quiz01.png" alt="ヒトの割合の画像" class="quiz__images">
+        </div>
     </div>
-    <div class="quiz__img__frame">
-        <img src="../img/quiz/img-quiz01.png" alt="ヒトの割合の画像" class="quiz__images">
-    </div>
+    
     <div >
         <div class="quiz__answer_A">
             <p>A</p>
@@ -82,14 +83,15 @@
                 <div><img src="../img/icon/icon-arrow.svg" alt=""></div>
             </button>
         </div>
+            <!--正解or不正解-->
+        <div class="p__Q js-answerBox">
+            <!-- <p>不正解...</p> -->
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText">A　約79万人</p>
+        </div>
+        <!--正解or不正解　END-->
     </div>
-    <!--正解or不正解-->
-    <div class="p__Q js-answerBox">
-        <!-- <p>不正解...</p> -->
-        <p class="js-answerTitle"></p>
-        <p class="js-answerText">A　約79万人</p>
-    </div>
-    <!--正解or不正解　END-->
+    
     <div class="quiz__quote js-answerBox">
             <!--上記のjs-answerBox必要？-->
         <div>
@@ -415,7 +417,6 @@
     <div class="copyright">&copy;2022 posse</div>
 </footer>
 <!--フッターここまで-->
-<!-- <script src="../js/quiz.js"></script> -->
 <script src="../js/quiz-again.js"></script>
 </body>
 </html>
