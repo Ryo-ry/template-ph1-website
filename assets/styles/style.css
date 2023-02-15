@@ -1,5 +1,9 @@
 body {
     background-color: ;
+    overflow: hidden;
+}
+html {
+    overflow: auto;
 }
 .header_top {
     background-color: #ffffff;
@@ -25,6 +29,7 @@ body {
     border-radius: 50%;
     /* padding: 10px; */
 }
+
 /*ヘッダー終了*/
 /* <!--最初のまとまり--> */
 /*  */
@@ -33,6 +38,7 @@ body {
 }
 .v_hero {
     display: flex;
+    flex-direction: row-reverse;
     padding-bottom: 100px;
 }
 .p_hero {
@@ -119,7 +125,7 @@ h1 {
     padding-top: 50px;
     line-height: -10px;
 }
-/*ここから画像とテキスト終了*/
+/*画像とテキスト終了*/
 /* <!--POSSEとは-終了-> */
 /* <!--ラインセクション--> */
 .line__section {
@@ -274,4 +280,237 @@ p {
 }
 .copyright::after {
     content: "";
+}
+
+.hamburger {
+    width: 40px;
+    height: 32px;
+    position: relative;
+    display: none;
+  }  
+  .hamburger_bar {
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background: #000;
+  }
+  
+  .hamburger_bar:nth-child(1) {
+    top: 5px;
+  }
+  
+  .hamburger_bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-70%);
+  }
+  .batsu {
+    font-size: 40px;
+    display: none;
+  }
+  .hamburger--container {
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  /*hamburgerの中身をPCから削除するためのinvisible*/
+  .invisible {
+    display: none;
+  }
+@media only screen and (max-width: 700px) {
+    html {
+        width: 100%;
+    }
+    /*ハンバーガーメニュー*/
+    /* .container {
+        background-color: lightblue;
+    } */
+    .item {
+        display: none;
+    }
+    .batsu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+        /*visibleとinvisibleの順番を逆にすると反応しなくなります。*/
+    .invisible {
+        display: none;
+    }
+    .visible {
+        display: block;
+    }
+    /*ハンバーガーここまで*/ 
+    
+    
+    /*hero*/
+    .v_hero {
+        display: block;
+        padding-bottom: 100px;
+        width: 100%;
+        
+    }
+    /*三人の画像*/
+    .p_hero {
+        width: 100%;
+    }
+    /*imgのclass*/
+    .f_hero {
+        width: 100%;
+        border-radius: 0;
+        /* transform: translateY(-40%); */
+    }
+    /*自分史上*/
+    .mk_hero {
+        border-radius: 0;
+        z-index: 9;
+    }
+    .hero__scroll > ul > li {
+        display: none;
+    }
+    .mk_hero {
+        position:relative;
+        background-color: #eff2f5;
+        border-radius: 3%;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        padding: 4%;
+        transform: translateY(-50%);
+        margin-bottom: -25%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .hero__text_1 {
+        color: #0071bc;
+        font-weight: bold;
+        transform: translateY(0);
+    }
+
+
+/*Interview*/
+.about__img {
+    max-width: 100%;
+    width: 100%;
+}
+.interview__columm__set {
+    padding-top: 0;
+}
+.interview__columm__list1 {
+    color: black;
+    width: 100%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10% 10% 0 0;
+    text-align: center;
+}
+.interview__columm__list1 > img {
+    border-radius: 10%;
+}
+.interview__columm__list1 > p {
+    text-align: left;
+    padding-top: 0px;
+    line-height: 20px;
+}
+/*interviewEND*/
+
+
+
+/*LineSection*/
+.line__section {
+    background-image: url(../img/bg-line.jpg);
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 10px;
+    margin: 0px;
+    /* margin-top: 60%; */
+    border-radius: 50px;
+    justify-content: center;
+}
+
+#line_section_top {
+    /* display: flex; */
+}
+.line__section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 113, 188, 0.9);
+    border-radius: 30px;
+    width: 100%;
+    z-index: 100;
+}
+p {
+    position: relative;
+    z-index: 10000;
+    font: weight 500px;;
+}
+
+.line_section_top__icon {
+    width: 50px; 
+    background-color: #eee;
+    height: 48px;  
+}
+.line_section_top {
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+}
+.line_section_top > p {
+    font-size: 50px;
+    color: #eee;
+    
+}
+.section__text {
+    line-height: 40px;
+}
+.line_add {
+    position: relative;
+    z-index: 1000;
+}
+.kh {
+    z-index: 9999;
+    position: relative;
+    transform: translateX(-50px);
+    vertical-align: -3px;
+}
+
+
+/*LineSectionEND*/
+
+    
+    /*AboutPosse*/
+    .interview__columm__set {
+        display: block;
+    }
+
+
+    /*ラインのフッターです。*/
+    .line__top {
+        background-color:#5FDF5B;
+        color: aliceblue;
+        padding: 10px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+        z-index: 999999999;
+    }
 }

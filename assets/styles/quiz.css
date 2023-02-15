@@ -147,3 +147,39 @@ h1 {
     vertical-align: 0.1px;
 }
 /*クイズセクションEND*/
+
+@media only screen and (max-width:700px) {
+    .quiz__pad {
+        margin: 0 10%;
+    }
+    .quiz__images{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .quiz__answer__text{
+        display: block;
+        width: 100%;
+        /* gap: 10px; */
+        /* margin: 20px 0 20px 0; */
+    }
+    .quiz__answer__text > button {
+        border: solid 4px #eee; 
+        padding: 24px;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+        /* transition: .4s; */
+        border-radius: 9px;
+    }
+    .line__section {
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width:900px){
+    .quiz__pad {
+        margin: 0 10%;
+    }
+}

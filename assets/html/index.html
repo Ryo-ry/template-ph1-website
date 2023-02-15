@@ -1,3 +1,7 @@
+
+
+<!--ハンバーガーメニュ、レスポンシブ実装済み-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +40,19 @@
                     </a>
                 </div>
             </div>
+            <button type="button" class="batsu">×</button>
+            <button class="hamburger">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>            
+        </div>
+        <div class="invisible hamburger--container-1">
+            <div class="hamburger--container">
+                <a href="https://posse-ap.github.io/sample-ph1-website/"> posseとは</a>
+            </div>
+            <div class="hamburger--container">
+                <a href="https://posse-ap.github.io/sample-ph1-website/quiz/">クイズ</a>
+            </div>
         </div>
     </header>
 <!--ヘッダー終了-->
@@ -43,13 +60,14 @@
 <!--最初のまとまり-->
 <div class="margin__k"></div>
 <div class="v_hero">
+    <div class="p_hero">
+        <img src="../img/img-hero.jpg" alt="三人の画像" class="f_hero">
+    </div>
     <div class="mk_hero">
         <p class="hero__text_1">学生プログラミングコミュニティ　POSSE（ポッセ）</p>
         <h1>自分史上最高<br>を仲間と。</h1>
     </div>
-    <div class="p_hero">
-        <img src="../img/img-hero.jpg" alt="三人の画像" class="f_hero">
-    </div>
+    
     <div class="hero__scroll">
         <ul>
             <li>Scroll Down</li>
@@ -156,4 +174,6 @@
 </footer>
 <!--フッターここまで-->
 </body>
+
+<script src="../js/hamburger.js"></script>
 </html>
